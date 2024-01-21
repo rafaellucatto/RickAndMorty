@@ -1,0 +1,47 @@
+{
+  "configurations" : [
+    {
+      "id" : "5C9B4580-203F-4BFE-B477-FFC0235A14F1",
+      "name" : "Test Scheme Action",
+      "options" : {
+        "targetForVariableExpansion" : {
+          "containerPath" : "container:RickNMorty.xcodeproj",
+          "identifier" : "16266FF22B16A6B700124016",
+          "name" : "RickNMorty"
+        }
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : {
+      "targets" : [
+        {
+          "containerPath" : "container:RickNMorty.xcodeproj",
+          "identifier" : "16266FF22B16A6B700124016",
+          "name" : "RickNMorty"
+        }
+      ]
+    },
+    "environmentVariableEntries" : [
+      {
+        "key" : "FB_REFERENCE_IMAGE_DIR",
+        "value" : "$(SOURCE_ROOT)\/$(PROJECT_NAME)Tests\/ReferenceImages"
+      },
+      {
+        "key" : "IMAGE_DIFF_DIR",
+        "value" : "$(SOURCE_ROOT)\/$(PROJECT_NAME)Tests\/FailureDiffs"
+      }
+    ]
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:RickNMorty.xcodeproj",
+        "identifier" : "162670082B16A6B800124016",
+        "name" : "RickNMortyTests"
+      }
+    }
+  ],
+  "version" : 1
+}
